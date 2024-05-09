@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:rgb(3, 3, 27);
+    color:white;
+    font-family: 'Poppins', sans-serif ;
+}
+nav{
+    background-color: rgb(4, 4, 92);
+    height: 50px;
+    
+}
+ nav, nav>ul {
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+   
+
+}
+nav ul li {
+    list-style:none;
+    margin: 0 30px;
+    
+    color: whitesmoke;
+}
+nav ul li a{
+    list-style:none;
+    margin: 0 30px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+nav ul li a:hover{
+   color:rgb(156, 156, 247);
+   font-size:1.04rem;
+}
+.left{
+    font-size: 1.4rem;
+}
+.firstSection{
+    display:flex;
+    justify-content: space-around;
+    margin:10px 0;
+
+}
+.firstSection>div{
+    
+    width: 30%;
+    margin: 50px 0;
+}
+.leftSection{
+    margin: 80px 30px;
+    font-size: 3rem;
+}
+.rightSection img {
+   width: 100%;
+   
+}
+.purple{
+    color:rgb(92, 6, 191);
+}
+.text-gray{
+    color: gray;
+}
+#element{
+    color:rgb(92, 6, 191);
+}
+main hr{
+    border: 0;
+    height: 1px;
+    background: rgb(121, 121, 194);
+    margin: 50px 50px;
+}
+.secondSection{
+    max-width: 80vw;
+    margin: auto;
+  height: 80vh;
+}
+.secondSection .box{
+    background-color: aliceblue;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0px;
+    display: flex;
+    
+}
+
+.vertical{
+   height: 93px;
+   width: 1px;
+   background-color: white;
+   margin: 0px 115px; 
+
+}
+.img-top{
+    width: 40px;
+    position: relative;
+    top: -38px;
+    left: -20px;
+}
+.vertical-title{
+    position: relative;
+    top:50px;
+    width: 150px;
+}
+.vertical-discription{
+    position:relative;
+    top:70px;
+    width: 200px;
+    font-size: small;
+    color: gray;
+}
+
+footer{
+    background-color: rgb(35, 34, 39);
+    
+    padding: 23px 123px;
+    
+}
+.flex{
+    display:flex;
+    justify-content: space-evenly;
+}
+footer ul{
+    list-style: none;
+}
+.footer-right{
+    text-align: center;
+    margin-top: 15px;
+    color: gray;
+}
+
+
+#hamburger-menu {
+    display: none; /* Initially hide for screens wider than 760px */
+    cursor: pointer;
+    order: 2; /* Change the order to appear at the end */
+}
+
+@media (max-width: 760px) {
+    nav ul {
+        display: none; /* Hide the navigation menu by default for small screens */
+    }
+
+    #hamburger-menu {
+        display: block; /* Display the hamburger menu icon */
+        order: 1; /* Change the order to appear before the navigation text */
+    }
+}
+@media (max-width:760px){
+    body{
+        width: 100%;
+    }
+}

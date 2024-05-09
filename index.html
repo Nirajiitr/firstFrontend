@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niraj's developer portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left"> Niraj's portfolio</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="https://nirajiitr.github.io/html.MyResume/">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="https://nirajiitr.github.io/html.MyResume/contact.html">Contact Me</a></li>
+         
+      </ul> 
+      <div id="hamburger-menu">&#9776;</div>
+    </nav>
+ </header> 
+  <main>
+    <section class="firstSection">
+        <div  class="leftSection">Hi, My name is <span class="purple">Niraj</span>
+           <div> and I'm passionate </div>
+           <span id="element"></span>
+
+        </div>
+        <div class="rightSection">
+            <img src="https://www.delimp.com/wp-content/uploads/2019/08/web-developments.png" /> 
+        </div>
+    </section>
+    <hr>
+    <section class="secondSection">
+      <span class="text-gray">what I done so far </span>
+       <h1>work experience</h1>
+       <div class="box">
+        <div class="vertical">
+          <img class="img-top" src="https://cdn0.iconfinder.com/data/icons/fillicons-information-technology/1550/programmer_software_developer-1024.png" alt="developer logo" />
+        <div class="vertical-title">HTML developer (2020-2021)</div>
+        <div class="vertical-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repudiandae ratione, esse amet quisquam corporis ex labore adipisci quia, distinctio officiis. Nesciunt architecto, non iusto nisi illum animi vitae rem.</div>
+        </div>
+        <div class="vertical"> 
+          <img class="img-top" src="https://thefindingmore.com/wp-content/uploads/2023/11/Blue-Yellow-3D-Modern-Personal-Finance-Management-Carousel-Instagram-Post-1-1024x1024.png" alt="developer logo" />
+          <div class="vertical-title">CSS developer (2021-2022)</div>
+          <div class="vertical-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repudiandae ratione, esse amet quisquam corporis ex labore adipisci quia, distinctio officiis. Nesciunt architecto, non iusto nisi illum animi vitae rem.</div>
+        </div>
+        <div class="vertical">
+          <img class="img-top" src="https://www.freepnglogos.com/uploads/javascript-png/javascript-nodejs-logo-27.png" alt="developer logo" />
+          <div class="vertical-title">javaScript developer (2022-2023)</div>
+          <div class="vertical-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repudiandae ratione, esse amet quisquam corporis ex labore adipisci quia, distinctio officiis. Nesciunt architecto, non iusto nisi illum animi vitae rem.</div>
+        </div>
+        <div class="vertical">
+          <img class="img-top" src="https://cdn4.iconfinder.com/data/icons/jobs-and-occupations-3/64/Programmer-job-avatar-profession-occupation-website-coding-programing-backend-developer-512.png" alt="developer logo" />
+          <div class="vertical-title">Backend developer (2023-2024)</div>
+          <div class="vertical-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repudiandae ratione, esse amet quisquam corporis ex labore adipisci quia, distinctio officiis. Nesciunt architecto, non iusto nisi illum animi vitae rem.</div>
+        </div>
+        <div class="vertical">
+          <img class="img-top" src="https://cdn0.iconfinder.com/data/icons/fillicons-information-technology/1550/programmer_software_developer-1024.png" alt="developer logo" />
+          <div class="vertical-title">FullStack developer (2024-2025)</div>
+          <div class="vertical-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repudiandae ratione, esse amet quisquam corporis ex labore adipisci quia, distinctio officiis. Nesciunt architecto, non iusto nisi illum animi vitae rem.</div>
+        </div>
+       </div>
+    </section>
+  </main>
+  <footer>
+    
+    <div class="flex">
+     <div class="footer-first">
+      <h3>Niraj's developer portfolio</h3>
+     </div>
+     <div class="footer-second">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>services</li>
+        <li>Contact</li>
+      </ul>
+     </div>
+     <div class="footer-third">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>services</li>
+        <li>Contact</li>
+      </ul>
+     </div>
+     <div class="footer-fourth">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>services</li>
+        <li>Contact</li>
+      </ul>
+     </div>
+    
+    </div>
+    <div class="footer-right">
+      <a href="https://nirajiitr.github.io/html.MyResume/">www.nirajportfolio.com</a> | All right reserved
+     </div>
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web developer','machine learning','web designer','softwere developer'],
+      typeSpeed: 50,
+    });
+  </script>
+ <script src="index.js"></script> 
+
+    <!-- Include Hammer.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Toggle navigation menu for small screens
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const navUl = document.querySelector('nav ul');
+
+    if (hamburgerMenu && navUl) {
+        hamburgerMenu.addEventListener('click', function () {
+            navUl.style.display = navUl.style.display === 'none' ? 'flex' : 'none';
+        });
+    }
+});
+
+    </script>
+</body>
+</html>
